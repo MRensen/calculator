@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.control.TextArea?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="sample.Controller" alignment="center" hgap="5" vgap="5" maxWidth="150"  >
+    <TextArea fx:id="textArea" maxHeight="200.0" maxWidth="170.0" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="5" text="0"/>
+
+
+
+    <Button onAction="#numberPressed" fx:id="button1" id="digit" prefWidth="30" prefHeight="30" text="1" GridPane.rowIndex="1" GridPane.columnIndex="0"> </Button>
+    <Button onAction="#numberPressed" fx:id="button2" id="digit" prefWidth="30" prefHeight="30" text="2" GridPane.rowIndex="1" GridPane.columnIndex="1"> </Button>
+    <Button onAction="#numberPressed" fx:id="button3" id="digit" prefWidth="30" prefHeight="30" text="3" GridPane.rowIndex="1" GridPane.columnIndex="2"> </Button>
+
+    <Button onAction="#numberPressed" fx:id="button4" id="digit" prefWidth="30" prefHeight="30" text="4" GridPane.rowIndex="2" GridPane.columnIndex="0"> </Button>
+    <Button onAction="#numberPressed" fx:id="button5" id="digit" prefWidth="30" prefHeight="30" text="5" GridPane.rowIndex="2" GridPane.columnIndex="1"> </Button>
+    <Button onAction="#numberPressed" fx:id="button6" id="digit" prefWidth="30" prefHeight="30" text="6" GridPane.rowIndex="2" GridPane.columnIndex="2"> </Button>
+
+    <Button onAction="#numberPressed" fx:id="button7" id="digit" prefWidth="30" prefHeight="30" text="7" GridPane.rowIndex="3" GridPane.columnIndex="0"> </Button>
+    <Button onAction="#numberPressed" fx:id="button8" id="digit" prefWidth="30" prefHeight="30" text="8" GridPane.rowIndex="3" GridPane.columnIndex="1"> </Button>
+    <Button onAction="#numberPressed" fx:id="button9" id="digit" prefWidth="30" prefHeight="30" text="9" GridPane.rowIndex="3" GridPane.columnIndex="2"> </Button>
+
+    <Button onAction="#numberPressed" fx:id="button0" id="digit" prefWidth="30" prefHeight="30" text="0" GridPane.rowIndex="4" GridPane.columnIndex="1"> </Button>
+
+    <Button onAction="#numberPressed" fx:id="buttonPlus" id="operation" prefWidth="30" prefHeight="30" text="+" GridPane.rowIndex="1" GridPane.columnIndex="4"> </Button>
+    <Button onAction="#numberPressed" fx:id="buttonTimes" id="operation" prefWidth="30" prefHeight="30" text="x" GridPane.rowIndex="2" GridPane.columnIndex="4"> </Button>
+    <Button onAction="#numberPressed" fx:id="buttonMin" id="operation" prefWidth="30" prefHeight="30" text="-" GridPane.rowIndex="3" GridPane.columnIndex="4"> </Button>
+    <Button onAction="#numberPressed" fx:id="buttonDivide" id="operation" prefWidth="30" prefHeight="30" text=":" GridPane.rowIndex="4" GridPane.columnIndex="4"> </Button>
+
+    <Button onAction="#numberPressed" fx:id="buttonComma" id="digit" prefWidth="30" prefHeight="30" text="." GridPane.rowIndex="4" GridPane.columnIndex="0"> </Button>
+    <Button onAction="#numberPressed" fx:id="buttonEnter" id="enter" prefWidth="65" prefHeight="30" text="enter" GridPane.rowIndex="4" GridPane.columnIndex="2" GridPane.columnSpan="2"> </Button>
+    <Button onAction="#numberPressed" fx:id="buttonClear" id="clear" prefWidth="65" prefHeight="30" text="Clear" GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.columnSpan="3"> </Button>
+
+</GridPane>
+
+
+
